@@ -18,4 +18,4 @@ SERVER_HOST="<%= @mysqld_hosts %>"
 #
 DBT2_TIME="30"
 DBT2_WAREHOUSES="64"
-DBT2_DATA_DIR="<%= @dbt2_home %>/data"
+DBT2_DATA_DIR="<%= node['ndb']['user-home'] %>/benchmarks/dbt2_data"

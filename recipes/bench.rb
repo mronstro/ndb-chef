@@ -69,7 +69,6 @@ template "#{dbt2_single_dir}/autobench.conf" do
   mode 0750
   variables({
     :mysqld_hosts => mysqld_host,
-    :dbt2_home => dbt2_single_dir,
   })
 end
 
@@ -95,7 +94,6 @@ template "#{dbt2_multi_dir}/autobench.conf" do
   mode 0750
   variables({
     :mysqld_hosts => mysqld_hosts,
-    :dbt2_home => dbt2_single_dir,
   })
 end
 
